@@ -1,0 +1,83 @@
+body, html{
+    margin: 0;
+    background-color: #1F2937;
+    font-family: "Karla", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container
+{
+    width: 550px;
+    height: 500px;
+    background-color: #2b3b52;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+h2{
+    color: #D5D4D8;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero
+{
+    text-align: left;
+    border-bottom: 1px solid #a09fa1;
+    padding: 30px 20px 45px 20px;
+    width: 500px;
+}
+.green-col
+{
+    color: #4ADF86;
+}
+
+button
+{
+    background-color: #4ADF86;
+    border: none;
+    color: azure;
+    padding: 15px 20px 15px 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.1s;
+}
+
+button:active
+{
+    transform: scale(0.95);
+    background-color: #44cb7a;
+}
+
+.output
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 540px;
+    height: 100px;
+}
+
+.output div{
+    background-color: #273549;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    height: 50px;
+    color:#4ADF86;
+}
