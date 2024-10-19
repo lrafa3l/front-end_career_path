@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
     databaseURL: "https://playground-d9456-default-rtdb.europe-west1.firebasedatabase.app/"
@@ -27,7 +27,15 @@ function cleanInputField() {
 }
 
 function appendToList(item) {
-    List.innerHTML += `<li>${item}</li>`
+    let itemID = item[0]
+    let itemValue = item[1]
+    let newEl = document.createElement("li")
+    newEl.textContent = itemValue
+    newEl.addEventListener("click", function (){
+        let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`)
+        remove(exactLocationOfItemInDB)
+    })
+    List.append(newEl)
 }
 
 function clearShoppingEl() {
@@ -35,11 +43,22 @@ function clearShoppingEl() {
 }
 
 onValue(ShoppingListInDB, function (snapshot) {
-    let ShoppingListArray = Object.values(snapshot.val())
-    clearShoppingEl()
-    for (let i = 0; i < ShoppingListArray.length; i++) {
-        appendToList(ShoppingListArray[i])
-        console.log(ShoppingListArray[i])
+    if (snapshot.exists() === true)
+    {
+
+        let ShoppingListArray = Object.entries(snapshot.val())
+        clearShoppingEl()
+        for (let i = 0; i < ShoppingListArray.length; i++) {
+            let currItem = ShoppingListArray[i]
+            let currItemID = currItem[0]
+            let currItemValue = currItem[1]
+            
+            appendToList(currItem)
+        }
+    }
+    else
+    {
+        List.innerHTML = "No items here... yet"
     }
 })
 

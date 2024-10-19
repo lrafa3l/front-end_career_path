@@ -1,8 +1,12 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #F7C1BB;
+    user-select: none;
 }
 
 .container {
@@ -18,8 +22,8 @@ img {
 }
 
 input {
-    color: #432000;
-    background-color: #DCE1EB;
+    color: #EBF8B8;
+    background-color: #1F363D;
     border: 0;
     padding: 15px;
     border-radius: 8px;
@@ -31,13 +35,19 @@ input {
 
 button {
     color: #FDFDFD;
-    background-color: #AC485A;
+    background-color: #2E86AB;
     border: 0;
     padding: 15px;
     border-radius: 8px;
     font-size: 20px;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #885A5A;
 }
 
 button:active{
@@ -49,12 +59,22 @@ ul{
     display: flex;
     padding: 0;
     flex-wrap: wrap;
+    gap: 10px;
+    color: #432000;
 }
 
 ul li{
-
+    flex-grow: 1;
+    font-size: 20px;
+    text-align: center;
     background-color: #FFFDF8;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+ul li:hover
+{
+    cursor: pointer;
+    background-color: #FFECC7;
 }
