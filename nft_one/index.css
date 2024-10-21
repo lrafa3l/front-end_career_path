@@ -11,7 +11,60 @@ Challenge:
 */
  
  
+body
+{
+   font-family: "Roboto", sans-serif;
+   color: #2b283a;
+   font-size: 16px;
+   font-weight: 400;
+   margin: 0;
+}
 
+header
+{
+   background-color: #5f29a3;
+   padding: 45px 0px;
+}
+
+h1
+{
+   color: whitesmoke;
+   font-size: 36px;
+   margin: 0;
+}
+
+h2
+{
+   margin-top: 0;
+}
+
+h3
+{
+   color: #d0aaff;
+   font-size: 20px;
+   margin: 0;
+}
+
+section
+{
+   padding: 45px 0px;
+}
+
+.sneaker-img
+{
+   width: 100%;
+}
+
+a
+{
+   color: #ef5839;
+   text-decoration: underline dotted;
+}
+
+a:hover, a:active
+{
+   color: #d4b44c;
+}
  
  
 
