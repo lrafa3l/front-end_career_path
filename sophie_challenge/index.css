@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0;
+    /* padding: 0; */
+}
+
+.container {
+    width: 570px;
+    margin: 0 auto;
+}
+
+/* typography */
+h1,
+h2 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.small {
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.bold-text {
+    font-weight: 900;
+    display: block;
+}
+
+h1 .bold-text {
+    font-size: 80px;
+    display: block;
+    color: #99D930;
+}
+
+h2 .bold-text {
+    font-size: 60px;
+    display: block;
+    color: #99D930;
+}
+
+h2
+{
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 20px;
+}
+
+/* links */
+a, .name, time {
+    color: #99d930;
+    font-weight: 900;
+}
+
+a:hover,
+a:focus {
+    color: #252525;
+    background-color: #fff;
+}
+
+header,
+section {
+    padding: 100px 0;
+}
+
+.inverse {
+    background-color: #252525;
+    color: #fff;
+}
+
+.about-me {
+    background-color: white;
+}
+
+.btn
+{
+    padding: 10px 25px;
+    background-color: #99D930;
+    display: inline-block;
+    margin-top: 10px;
+    color: #252525;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus
+{
+    background-color: #252525;
+    color: white;
+}
+
+.inverse .btn:hover,
+.inverse .btn:focus
+{
+    background-color: white;
+    color: #252525;
+}
