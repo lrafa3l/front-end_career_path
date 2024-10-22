@@ -1,71 +1,136 @@
-/* 
-Challenge:
-1. Create a body selector.
-2. Set the base font size and text color to 
-   the values given on the slide.
-3. Bring in "Roboto" from Google Fonts and 
-   set it as the default font. Make sure 
-   browsers will fall back on a sans-serif 
-   font if Roboto is unavailable.
-4. Override HTML's default margin.
-*/
- 
- 
-body
-{
-   font-family: "Roboto", sans-serif;
-   color: #2b283a;
-   font-size: 16px;
-   font-weight: 400;
-   margin: 0;
-}
+ body {
+    font-family: "Roboto", sans-serif;
+    color: #2b283a;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+ }
 
-header
-{
-   background-color: #5f29a3;
-   padding: 45px 0px;
-}
+ /* typography */
+ h1,
+ h3 {
+    margin: 0;
+ }
 
-h1
-{
-   color: whitesmoke;
-   font-size: 36px;
-   margin: 0;
-}
+ h1 {
+    color: whitesmoke;
+    font-size: 36px;
 
-h2
-{
-   margin-top: 0;
-}
+ }
 
-h3
-{
-   color: #d0aaff;
-   font-size: 20px;
-   margin: 0;
-}
+ h2 {
+    margin-top: 0;
+ }
 
-section
-{
-   padding: 45px 0px;
-}
+ h3 {
+    color: #d0aaff;
+    font-size: 20px;
+ }
 
-.sneaker-img
-{
-   width: 100%;
-}
+ .nd-section .container p {
+    line-height: 23px;
+    /* font-size: 23px; */
+ }
 
-a
-{
-   color: #ef5839;
-   text-decoration: underline dotted;
-}
+ /* links */
+ a {
+    color: #ef5839;
+    text-decoration: underline dotted;
+ }
 
-a:hover, a:active
-{
-   color: #d4b44c;
-}
- 
- 
+ a:hover,
+ a:active {
+    color: #d4b44c;
+ }
+
+ .container section .info {
+    border: 2px solid #5f29a3;
+    padding: 10px 19px;
+    text-decoration: none;
+    border-radius: 4.6px;
+    font-weight: 500px;
+ }
+
+ .nd-section .container .info {
+    border: 2px solid #7ea329;
+    padding: 10px 19px;
+    text-decoration: none;
+    border-radius: 4.6px;
+    font-weight: 500px;
+ }
+
+ .btn {
+    display: inline-block;
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    text-decoration: none;
+    font-weight: 500;
+ }
+
+ .btn:hover,
+ .btn:active {
+    background-color: #f3e885;
+    color: #2b283a;
+ }
+
+ .btn-dark {
+    background-color: #5f29a3;
+    color: #d0aaff;
+ }
+
+ .btn-mid {
+    background-color: #d0aaff;
+    color: #5f29a3;
+ }
+
+ .btn-light {
+    background-color: white;
+    color: #5f29a3;
+ }
 
 
+
+ /* layout */
+ header,
+ section,
+ footer {
+    padding: 45px 0px;
+ }
+
+ header,
+ .nd-section {
+    background-color: #5f29a3;
+
+ }
+
+ .container {
+    width: 640px;
+    margin: 0 auto;
+ }
+
+ .sneaker-img {
+    width: 100%;
+ }
+
+ .nd-section {
+    color: whitesmoke;
+ }
+
+
+ .img-one {
+    width: 300px;
+    border-radius: 4.6px;
+ }
+
+ .crypto-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+
+ footer {
+    text-align: center;
+    font-size: 16px;
+    color: #5f29a3;
+ }
