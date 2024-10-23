@@ -1,0 +1,109 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #252525;
+}
+
+.top {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    color: whitesmoke;
+    padding: 25px;
+    margin: 0;
+    gap: 10px;
+}
+
+li{
+    cursor: pointer;
+}
+
+.top .logo {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.top .icon {
+    width: 25px;
+}
+
+h1 {
+    margin: 30px 25px;
+    color: #252525;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.align-right
+{
+    margin-left: auto;
+}
+
+.break-line {
+    display: block;
+}
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin: 0px 25px;
+}
+
+.item-img
+{
+    width: 100%;
+    display: block;
+}
+
+.item
+{
+    position: relative;
+    margin: 0;
+}
+
+.img-banner
+{
+    padding: 10px;
+    background-color: #cd6858;
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button
+{
+    border: none;
+    cursor: pointer;
+    background-color: #cd6858;
+    padding: 10px 15px;
+    font-weight: 700;
+    color: whitesmoke;
+    align-self: center;
+}
+
+.chatbox-bg
+{
+    background-color: #dda15e;
+    padding: 10px;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 1px 5px #999;
+    margin-left: auto;
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+}
+
+.chatbox-img
+{
+    margin: auto;
+    width: 75%;
+}
