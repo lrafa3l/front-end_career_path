@@ -1,23 +1,23 @@
-const menuArray = [
-    {
-        name: "Pizza",
-        ingredients: ["pepperoni", "mushrom", "mozarella"],
-        id: 0,
-        price: 14,
-        emoji: "🍕"
-    },
+export const menuArray = [
     {
         name: "Hamburger",
-        ingredients: ["beef", "cheese", "lettuce"],
-        price: 12,
-        emoji: "🍔",
+        ingredients: ["beef", " cheese", " lettuce"],
+        price: "5699",
+        image: "burger_home.png",
         id: 1
+    },
+    {
+        name: "Pizza",
+        ingredients: ["pepperoni", " mushrom", " mozarella"],
+        price: "9960",
+        image: "pizza_home.png",
+        id: 0
     },
         {
         name: "Beer",
         ingredients: ["grain, hops, yeast, water"],
-        price: 12,
-        emoji: "🍺",
+        price: "499",
+        image: "🍺",
         id: 2
     }
 ]
