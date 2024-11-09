@@ -54,27 +54,32 @@ img {
 .card {
     position: relative;
     display: flex;
-    min-width: 440px;
-    max-width: 550px;
+    min-width: 340px;
+    max-width: 450px;
+    width: 100%;
     box-shadow: 0px 0px 10px 1px #999;
-    margin: 0 20px 15px 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     border-radius: 5px;
     max-height: 120px;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .card-image {
-    width: 110px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px 0 0 5px;
+    width: 90px;
+    height: 90px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;   
 }
 
-.card-image:hover {
+/* .card-image:hover {
     width: 130px;
     height: auto;
     object-fit: cover;
     border-radius: 5px 0 0 5px;
-}
+} */
 
 .card-right {
     padding: 10px;
