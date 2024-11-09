@@ -1,12 +1,11 @@
  body {
     font-family: "Roboto", sans-serif;
     color: #2b283a;
-    font-size: 16px;
     font-weight: 400;
     margin: 0;
  }
 
- /* typography */
+ /* ----- TYPOGRAPHY ----- */
  h1,
  h3 {
     margin: 0;
@@ -14,25 +13,31 @@
 
  h1 {
     color: whitesmoke;
-    font-size: 36px;
+    font-size: 1.75rem;
 
  }
 
  h2 {
+    color: #451c7a;
+    font-size: 1em;
     margin-top: 0;
  }
 
  h3 {
+    font-size: 1.25rem;
+ }
+
+ .subheading {
+    display: block;
+    font-size: 1.25rem;
     color: #d0aaff;
-    font-size: 20px;
  }
 
- .nd-section .container p {
-    line-height: 23px;
-    /* font-size: 23px; */
+ p {
+    line-height: 1.5;
  }
 
- /* links */
+ /* ----- LINKS ----- */
  a {
     color: #ef5839;
     text-decoration: underline dotted;
@@ -43,25 +48,14 @@
     color: #d4b44c;
  }
 
- .container section .info {
-    border: 2px solid #5f29a3;
-    padding: 10px 19px;
-    text-decoration: none;
-    border-radius: 4.6px;
-    font-weight: 500px;
- }
-
- .nd-section .container .info {
-    border: 2px solid #7ea329;
-    padding: 10px 19px;
-    text-decoration: none;
-    border-radius: 4.6px;
-    font-weight: 500px;
- }
+ /* ----- BUTTONS ----- */
 
  .btn {
-    display: inline-block;
-    padding: 10px 19px;
+    font-size: 1.125rem;
+    display: block;
+    text-align: center;
+    padding: 0.625em 1.1875em;
+    margin-bottom: 1em;
     border-radius: 4.6px;
     text-decoration: none;
     font-weight: 500;
@@ -88,49 +82,152 @@
     color: #5f29a3;
  }
 
-
-
- /* layout */
+ /* ----- LAYOUT ----- */
  header,
  section,
  footer {
-    padding: 45px 0px;
+    padding: 1.25em 0px;
  }
 
  header,
  .nd-section {
     background-color: #5f29a3;
-
  }
 
  .container {
-    width: 640px;
+    width: 80%;
     margin: 0 auto;
+    max-width: 800px;
  }
 
  .sneaker-img {
     width: 100%;
+    display: block;
+    max-width: 600px;
+    margin: 0 auto 2em;
  }
 
  .nd-section {
     color: whitesmoke;
  }
 
-
- .img-one {
-    width: 300px;
-    border-radius: 4.6px;
- }
-
- .crypto-img {
+.crypto-img {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
  }
 
+ .feature-image {
+   width: 100%;
+   border-radius: 4.6px;
+}
 
  footer {
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
     color: #5f29a3;
+ }
+
+ /* ----- NAVIGATION ----- */
+
+ nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    display: block;
+    padding: 0.85rem 0;
+ }
+
+ ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+ }
+
+
+ /* ----- MEDIA QUERIES ----- */
+
+ /*
+  Challenge: Navigation styles for wider screens
+    1. Use flexbox to display the navigation horizontally
+       on one row when the screen is 768px or wider
+    2. Align the nav with the right edge of its container
+    3. Apply space between each link with a margin
+    4. On wider screens, all of the content inside the header
+       should be vertically centered
+*/
+
+ @media (min-width: 480px) {
+    .crypto-img {
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .img-one {
+       width: 48.8%;
+       border-radius: 4.6px;
+    }
+ }
+
+ @media (max-width: 767px) {
+    header {
+       text-align: center;
+    }
+
+    nav {
+       margin-top: 1.5em;
+    }
+
+    li:not(:last-child) {
+       border-bottom: 1px dotted #a190b6;
+    }
+ }
+
+ @media (min-width: 768px) {
+
+    header,
+    section,
+    footer {
+       padding: 2.8125em 0px;
+    }
+
+    header .container,
+    nav ul {
+       display: flex;
+    }
+
+    header .container {
+       justify-content: space-between;
+       align-items: center;
+    }
+
+    nav li {
+       margin-left: 1.25em;
+    }
+
+    .btn {
+       display: inline-block;
+       margin-right: 0.5em;
+    }
+
+    h1 {
+       font-size: 2.25rem;
+    }
+
+    h2 {
+       font-size: 1.75rem;
+    }
+
+    .subheading {
+       font-size: 1.25rem;
+    }
+
+    p {
+       font-size: 1.125em;
+    }
+    
+    .feature-item {
+      flex: 1 220px;
+      gap: 2em;
+   }
  }
