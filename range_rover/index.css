@@ -1,0 +1,238 @@
+ body {
+    font-family: "Roboto", sans-serif;
+    color: #2b283a;
+    font-weight: 400;
+    margin: 0;
+ }
+
+ /* ----- TYPOGRAPHY ----- */
+ h1,
+ h3 {
+    margin: 0;
+ }
+
+ h1 {
+    color: rgba(150, 112, 41, 0.979);
+    font-size: 1.75rem;
+
+ }
+
+ h2 {
+    color: rgba(100, 75, 28, 0.979);
+    font-size: 1em;
+    margin-top: 0;
+ }
+
+ h3 {
+    font-size: 1.25rem;
+ }
+
+ .subheading {
+    display: block;
+    font-size: 1.25rem;
+    color: rgba(150, 113, 46, 0.774);
+ }
+
+ p {
+    line-height: 1.5;
+ }
+
+.one-color {
+   color: rgba(100, 75, 28, 0.979);
+}
+
+ /* ----- LINKS ----- */
+ a {
+    color: #ef5839;
+    text-decoration: underline dotted;
+ }
+
+ a:hover,
+ a:active {
+    color: #d4b44c;
+ }
+
+ /* ----- BUTTONS ----- */
+
+ .btn {
+    font-size: 1.125rem;
+    display: block;
+    text-align: center;
+    padding: 0.625em 1.1875em;
+    margin-bottom: 1em;
+    border-radius: 4.6px;
+    text-decoration: none;
+    font-weight: 500;
+ }
+
+ .btn:hover,
+ .btn:active {
+    background-color: #dda972;
+    color: #2b283a;
+ }
+
+ .btn-dark {
+    background-color: #D6C4B1;
+    color: rgba(150, 112, 41, 0.979);
+ }
+
+ .btn-mid {
+    background-color: rgba(150, 112, 41, 0.979);
+    color: #D6C4B1;
+ }
+
+ .btn-light {
+    background-color: white;
+    color: #D6C4B1;
+ }
+
+ /* ----- LAYOUT ----- */
+ header,
+ section,
+ footer {
+    padding: 1.25em 0px;
+ }
+
+ header,
+ .nd-section {
+    background-color: #D6C4B1;
+ }
+
+ .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+ }
+
+ .sneaker-img {
+    width: 100%;
+    display: block;
+    max-width: 600px;
+    margin: 0 auto 2em;
+ }
+
+ .nd-section {
+    color: whitesmoke;
+ }
+
+.crypto-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+ }
+
+ .feature-image {
+   width: 100%;
+   border-radius: 4.6px;
+}
+
+ footer {
+    text-align: center;
+    font-size: 1em;
+    color: rgba(150, 112, 41, 0.979);
+ }
+
+ /* ----- NAVIGATION ----- */
+
+ nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.125rem;
+    display: block;
+    padding: 0.85rem 0;
+    font-weight: bold;
+ }
+
+ ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+ }
+
+
+ /* ----- MEDIA QUERIES ----- */
+
+ /*
+  Challenge: Navigation styles for wider screens
+    1. Use flexbox to display the navigation horizontally
+       on one row when the screen is 768px or wider
+    2. Align the nav with the right edge of its container
+    3. Apply space between each link with a margin
+    4. On wider screens, all of the content inside the header
+       should be vertically centered
+*/
+
+ @media (min-width: 480px) {
+    .crypto-img {
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .img-one {
+       width: 48.8%;
+       border-radius: 4.6px;
+    }
+ }
+
+ @media (max-width: 767px) {
+    header {
+       text-align: center;
+    }
+
+    nav {
+       margin-top: 1.5em;
+    }
+
+    li:not(:last-child) {
+       border-bottom: 0.5px solid whitesmoke;
+    }
+ }
+
+ @media (min-width: 768px) {
+
+    header,
+    section,
+    footer {
+       padding: 2.8125em 0px;
+    }
+
+    header .container,
+    nav ul {
+       display: flex;
+    }
+
+    header .container {
+       justify-content: space-between;
+       align-items: center;
+    }
+
+    nav li {
+       margin-left: 1.25em;
+    }
+
+    .btn {
+       display: inline-block;
+       margin-right: 0.5em;
+    }
+
+    h1 {
+       font-size: 2.25rem;
+    }
+
+    h2 {
+       font-size: 1.75rem;
+    }
+
+    .subheading {
+       font-size: 1.25rem;
+    }
+
+    p {
+       font-size: 1.125em;
+    }
+    
+    .feature-item {
+      flex: 1 220px;
+      gap: 2em;
+   }
+ }
